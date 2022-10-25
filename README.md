@@ -1,4 +1,4 @@
 # Liquid Learning
 
 
-![](liquid_base_many_symm_i_med.jpeg)
+![](Concept%20-%20Liquid%20Symmetry.jpeg)
