@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Glass - Landing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <section>
+        <header>
+            <a href="https://www.media.mit.edu/projects/liquid-movies-learning/overview/" class="logo">💧Liquid
+                Learning</a>
+            <div class="toggle" onclick="menuToggle();"></div>
+        </header>
+        <div class="glass"></div>
+        <div class="content">
+            <h2>An exploration system for your educational journeys.</h2>
+            <h3><a href="tour.html">Explore</a></h3>
+        </div>
+        <video src="https://storage.googleapis.com/blessa/mit/viral/demo/ll_0/ll_bg_vid_a.mp4" autoplay muted loop></video>
+        <ul class="sci">
+            <li style="--i:1"><a href="#"></a>✨</li>
+            <li style="--i:2"><a href="#"></a>🪄</li>
+            <li style="--i:3"><a href="#"></a>🧿</li>
+        </ul>
+        <ul class="navigation">
+            <li style="--i:1;"><a href="#">Home</a></li>
+            <li style="--i:2;"><a href="https://www.media.mit.edu/projects/liquid-movies-learning/overview/">About</a></li>
+            <li style="--i:3;"><a href="#">Explore</a></li>
+    </section>
+    <script type="text/javascript">
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.toggle');
+            const section = document.querySelector('section');
+            toggleMenu.classList.toggle('active');
+            section.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
