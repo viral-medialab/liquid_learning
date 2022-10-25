@@ -1,4 +1,4 @@
-# liquid_learning
+# Liquid Learning
 
 
-![](liquid_learning_cover.jpg)
+![](liquid_base_many_symm_i_med.jpeg)
