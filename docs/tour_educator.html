@@ -1,37 +1,63 @@
 <!doctype html>
-<html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Liquid Glass - Explore: Linda's Story</title>
-    <link rel="stylesheet" href="css/tour_educator.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Learning - Landing</title>
+    <link rel="stylesheet" href="css/tour.css">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
-
-    <!-- Calming background -->
-    <div class="hero">
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="https://storage.googleapis.com/blessa/mit/viral/demo/ll_0/ll_bg_vid_a.mp4" type="video/mp4">
-        </video>
-    </div>
-    <!-- Liquid Cards -->
-    <div class="container">
-        <!-- Card 1-->
-        <div class="card">
+    <section>
+        <header>
+            <a href="https://www.media.mit.edu/projects/liquid-movies-learning/overview/" class="logo">&#128167;Liquid
+                Learning</a>
+            <div class="toggle" onclick="menuToggle();"></div>
+        </header>
+        <div class="glass"></div>
+        <div class="center">
             <div class="content">
-                <h3>Linda's Story</h3>
-                <p>Linda is 31 years old, single, outspoken and very bright. She majored in
-                    philosophy. As a student, she was deeply concerned with issues of
-                    discrimination and social justice, and also participated in antinuclear
-                    demonstrations. Which of these two alternatives is more probable?</p>
-                <a href="bayes_view.html">Answer</a>
+            <!-- Liquid Cards -->
+            <div class="container">
+                <!-- Card 1-->
+                <div class="card" style=" width: 60vh; height: 30vh;">
+                    <div class="card_content">
+                        <h3>Linda's Story</h3>
+                        <p>Linda is 31 years old, single, outspoken and very bright. She majored in
+                            philosophy. As a student, she was deeply concerned with issues of
+                            discrimination and social justice, and also participated in antinuclear
+                            demonstrations. Which of these two alternatives is more probable?</p>
+                        <a href="bayes_view.html">Answer</a>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
-    </div>
+
+        <video src="content/ll_bg_vid_a_comp.mp4" autoplay muted loop></video>
+        <ul class="sci">
+            <li style="--i:1"><a href="#"></a>✨</li>
+            <li style="--i:2"><a href="#"></a>🪄</li>
+            <li style="--i:3"><a href="#"></a>🧿</li>
+        </ul>
+        <ul class="navigation">
+            <li style="--i:1;"><a href="index.html">Home</a></li>
+            <li style="--i:2;"><a href="https://www.media.mit.edu/projects/liquid-movies-learning/overview/">About</a>
+            </li>
+            <li style="--i:3;"><a href="tour.html">Explore</a></li>
+    </section>
+    <script type="text/javascript">
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.toggle');
+            const section = document.querySelector('section');
+            toggleMenu.classList.toggle('active');
+            section.classList.toggle('active');
+        }
+    </script>
     <!-- Physics: Glass Tilt-->
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll(".card"), {
             max: 25,
@@ -40,8 +66,7 @@
             "max-glare": 1,
         });
     </script>
-</body>
 
-</html>
+</body>
 
 </html>
