@@ -1,48 +1,75 @@
 <!doctype html>
-<html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Liquid Learning - Tour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Learning - Landing</title>
     <link rel="stylesheet" href="css/tour.css">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
-    <!-- Calming background -->
-    <div class="hero">
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="https://storage.googleapis.com/blessa/mit/viral/demo/ll_0/ll_bg_vid_a.mp4" type="video/mp4">
-        </video>
-    </div>
-    <!-- Liquid Cards -->
-    <div class="container">
-        <!-- Card 1-->
-        <div class="card">
-            <div class="content">
-                <h3>Entrepreneur</h3>
-                <p>You're interested in organizing and operating a business or businesses and their opportunity costs.
-                </p>
-                <a href="tour_educator.html">Tour</a>
-            </div>
+    <section>
+        <header>
+            <a href="https://www.media.mit.edu/projects/liquid-movies-learning/overview/" class="logo">&#128167;Liquid
+                Learning</a>
+            <div class="toggle" onclick="menuToggle();"></div>
+        </header>
+        <div class="glass"></div>
+        <div class="center">
+                    <div class="content">
+                        <!-- Liquid Cards -->
+                        <div class="container">
+                            <!-- Card 1-->
+                            <div class="card">
+                                <div class="card_content">
+                                    <h3>Entrepreneur</h3>
+                                    <p>You're interested in organizing and operating a business or businesses and their opportunity costs.
+                                    </p>
+                                    <a href="tour_educator.html">Tour</a>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="card">
+                                <div class="card_content">
+                                    <h3>Engineer</h3>
+                                    <p>You're interested in inventing, designing, analyzing, building, and testing complex systems.</p>
+                                    <a href="tour_educator.html">Tour</a>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="card">
+                                <div class="card_content">
+                                    <h3>Educator</h3>
+                                    <p>You're interested in providing instruction to students and their learning development.</p>
+                                    <a href="tour_educator.html">Tour</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
         </div>
-        <!-- Card 2 -->
-        <div class="card">
-            <div class="content">
-                <h3>Engineer</h3>
-                <p>You're interested in inventing, designing, analyzing, building, and testing complex systems.</p>
-                <a href="tour_educator.html">Tour</a>
-            </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="card">
-            <div class="content">
-                <h3>Educator</h3>
-                <p>You're interested in providing instruction to students and their learning development.</p>
-                <a href="tour_educator.html">Tour</a>
-            </div>
-        </div>
-    </div>
+
+        <video src="content/ll_bg_vid_a_comp.mp4" autoplay muted loop></video>
+        <ul class="sci">
+            <li style="--i:1"><a href="#"></a>✨</li>
+            <li style="--i:2"><a href="#"></a>🪄</li>
+            <li style="--i:3"><a href="#"></a>🧿</li>
+        </ul>
+        <ul class="navigation">
+            <li style="--i:1;"><a href="index.html">Home</a></li>
+            <li style="--i:2;"><a href="https://www.media.mit.edu/projects/liquid-movies-learning/overview/">About</a>
+            </li>
+            <li style="--i:3;"><a href="tour.html">Explore</a></li>
+    </section>
+    <script type="text/javascript">
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.toggle');
+            const section = document.querySelector('section');
+            toggleMenu.classList.toggle('active');
+            section.classList.toggle('active');
+        }
+    </script>
     <!-- Physics: Glass Tilt-->
     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
     <script>
@@ -53,8 +80,7 @@
             "max-glare": 1,
         });
     </script>
-</body>
 
-</html>
+</body>
 
 </html>
