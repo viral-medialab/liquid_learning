@@ -1,4 +1,4 @@
 # Liquid Learning
 
 
-![](Concept%20-%20Liquid%20Symmetry.jpeg)
+![](docs/content/img/Concept%20-%20Liquid%20Bayes_b.png)
